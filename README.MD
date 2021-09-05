@@ -15,7 +15,7 @@ Method post
 Contoh insert data user dengan format ,json di body 
 {
 "email" : "developerpdak@gmail.com",
-"email" : "Andre",
+"name" : "Andre",
 "password" : "S2komputer"
 }
 
