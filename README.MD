@@ -1,5 +1,7 @@
 Dockerized-Golang-Postgres-API-Transaction
 
+Db = automigrate ,mounted on database_postgres volumes.
+
 Stack docker-compose ,build di macbook. 
 Namun bisa juga ke swarm mode untuk horizontal scalling jika dibutuhkan ,krna yang saya pakai sudah versi 3 higher.
 
