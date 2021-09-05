@@ -1,0 +1,20 @@
+//Public sharing collection,workspace and environtment
+
+https://www.postman.com/collections/c1bd9d1681c53ef7940f
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/2892046-05b63e0a-5541-46ff-ba89-dbe86ee71fca?action=collection%2Ffork&collection-url=entityId%3D2892046-05b63e0a-5541-46ff-ba89-dbe86ee71fca%26entityType%3Dcollection%26workspaceId%3D5c3c0f06-0af2-482a-995d-c0ffa73b41d1#?env%5Blocal_api%5D=W3sia2V5IjoiYmFzZV91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMi9hcGkiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InRva2VuIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfV0=)
+
+<div class="postman-run-button"
+data-postman-action="collection/fork"
+data-postman-var-1="2892046-05b63e0a-5541-46ff-ba89-dbe86ee71fca"
+data-postman-collection-url="entityId=2892046-05b63e0a-5541-46ff-ba89-dbe86ee71fca&entityType=collection&workspaceId=5c3c0f06-0af2-482a-995d-c0ffa73b41d1"
+data-postman-param="env%5Blocal_api%5D=W3sia2V5IjoiYmFzZV91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMi9hcGkiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InRva2VuIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfV0="></div>
+<script type="text/javascript">
+  (function (p,o,s,t,m,a,n) {
+    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+    !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+      (n = o.createElement("script")),
+      (n.id = s+t), (n.async = 1), (n.src = m), n
+    ));
+  }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+</script>

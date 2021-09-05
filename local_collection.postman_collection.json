@@ -1,0 +1,394 @@
+{
+	"info": {
+		"_postman_id": "05b63e0a-5541-46ff-ba89-dbe86ee71fca",
+		"name": "local_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Insert a User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"developerpdak@gmail.com\",\n    \"password\": \"S2komputer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/new",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"email\" : \"developerpdak@gmail.com\",\n\"password\" : \"S2komputer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Insert Transaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE2fQ.Td6mWqCCy4dS9YApsEh43BSyvlUWmmWayU-ESEHrxYU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"uuid\" : \"2\",\n\"user_id\" : 16,\n\"device_timestamp\" : \"2021-09-06T01:59:17\",\n\"total_amount\" : \"890000\",\n\"paid_amount\" : \"4550000\",\n\"change_amount\" : \"66000\",\n\"payment_method\" : \"45000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/transaction/new",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transaction",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE2fQ.Td6mWqCCy4dS9YApsEh43BSyvlUWmmWayU-ESEHrxYU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/transaction",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Transaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE2fQ.Td6mWqCCy4dS9YApsEh43BSyvlUWmmWayU-ESEHrxYU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"uuid\": \"2\",\n            \"user_id\": 16,\n            \"device_timestamp\": \"2021-09-06T01:59:17\",\n            \"total_amount\": \"90000\",\n            \"paid_amount\": \"90000\",\n            \"change_amount\": \"90000\",\n            \"payment_method\": \"cash\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/transaction/update?id=3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transaction",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Transaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE2fQ.Td6mWqCCy4dS9YApsEh43BSyvlUWmmWayU-ESEHrxYU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/transaction/delete?id=3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transaction",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail Transaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE2fQ.Td6mWqCCy4dS9YApsEh43BSyvlUWmmWayU-ESEHrxYU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/transaction/detail?id=3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transaction",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TransactionItem",
+			"item": [
+				{
+					"name": "Post Transaction Item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE2fQ.Td6mWqCCy4dS9YApsEh43BSyvlUWmmWayU-ESEHrxYU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"uuid\" : \"2\",\n\"user_id\" : 16,\n\"transaction_id\" : \"2\",\n\"title\" : \"Test\",\n\"qty\" : \"1\",\n\"price\" : \"66000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/transaction_item/new",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transaction_item",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transaction Item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE2fQ.Td6mWqCCy4dS9YApsEh43BSyvlUWmmWayU-ESEHrxYU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/transaction_item",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transaction_item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Transaction Item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Detail Transaction Item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE2fQ.Td6mWqCCy4dS9YApsEh43BSyvlUWmmWayU-ESEHrxYU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/transaction_item/detail?id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transaction_item",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjE2fQ.Td6mWqCCy4dS9YApsEh43BSyvlUWmmWayU-ESEHrxYU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/transaction_item/delete?id=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transaction_item",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
