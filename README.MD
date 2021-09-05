@@ -66,6 +66,8 @@ attach bearer / bawa token ,klw tidak akan ada pesan perlu token ,dan data tidak
 localhost:8002/api/transaction/detail?id=1
 attach bearer / bawa token ,klw tidak akan ada pesan perlu token ,dan data tidak akan di tampilkan
 
+Local collection = local_collection.postman_collection.json
+Public collection = Public Collection.txt
 
 Writed ,5 Sept' 2021
 Developer ,Andre ,Jakarta-Indonesia
