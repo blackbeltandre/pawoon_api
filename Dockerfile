@@ -35,8 +35,8 @@ WORKDIR /root/
 COPY --from=builder /app/main .
 COPY --from=builder /app/.env .       
 
-# Expose port 8002 to the outside world
-EXPOSE 8002
+# Expose port 8007 to the outside world
+EXPOSE 8007
 
 #Command to run the executable
 CMD ["./main"]
